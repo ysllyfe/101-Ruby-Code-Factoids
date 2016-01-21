@@ -1,0 +1,2443 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+body {
+  background-color: white;
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 30px;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rule .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.hljs-name {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">101 Ruby Code Factoids</h1>
+
+<h2 id="toc_1">0) ‘methods’ method</h2>
+
+<p>Since almost everything in Ruby is an Object you can type dot methods on it to see what methods are available.</p>
+
+<pre><code class="language-ruby">4.methods - Object.methods
+# =&gt; [:-@, :+, :-, :*, :/, :div, :%, :modulo, :divmod, :fdiv, :**, :abs, :magnitude, :~, :&amp;, :|, :^, :[], :&lt;&lt;, :&gt;&gt;, :to_f, :size, :bit_length, :zero?, :odd?, :even?, :succ, :integer?, :upto, :downto, :times, :next, :pred, :chr, :ord, :to_i, :to_int, :floor, :ceil, :truncate, :round, :gcd, :lcm, :gcdlcm, :numerator, :denominator, :to_r, :rationalize, :singleton_method_added, :coerce, :i, :+@, :remainder, :real?, :nonzero?, :step, :quo, :to_c, :real, :imaginary, :imag, :abs2, :arg, :angle, :phase, :rectangular, :rect, :polar, :conjugate, :conj, :between?]
+</code></pre>
+
+<h2 id="toc_2">1) _</h2>
+
+<p>In IRB the use of the underscore variable _ will hold the evaluation of the last line of code executed.</p>
+
+<p>When the variable is used in code it’s an indicator from the developer that this parameter isn’t going to be used.  For example “Divided into columns of 4”</p>
+
+<pre><code class="language-ruby">[0,1,2,3,4,5,6,7,9].group_by.with_index {|_,index| index % 4 }.values
+# =&gt; [[0, 4, 9], [1, 5], [2, 6], [3, 7]]
+</code></pre>
+
+<p>In the Minitest framework, starting in version 5.6.0, the use of underscore is an alias to the new spec style testing.</p>
+
+<pre><code class="language-ruby">spec(4).must_be :even?
+_(4).wont_be :odd?
+</code></pre>
+
+<h2 id="toc_3">2) instance_exec</h2>
+
+<p>The <code>instance_exec</code> method is available on every Object, and everything in Ruby is an Object, and when you use it you open up the <code>singleton_class</code> of the object to work on.  Anything you can do in a Class you could do in an <code>instance_exec</code>.</p>
+
+<pre><code class="language-ruby">num = Object.new
+num.instance_exec {
+  def == other
+    other == 3
+  end
+}
+num == 4
+# =&gt; false
+num == 3
+# =&gt; true
+</code></pre>
+
+<p>You can even use this on a Proc… which could drive people crazy if you do.  But just so you know that you can, here it is.</p>
+
+<pre><code class="language-ruby">prc = proc {|num| num == 4}
+prc.instance_exec { def == other; other == 3 end  }
+ 
+prc.call(4)
+# =&gt; true
+prc.call(3)
+# =&gt; false
+ 
+prc == 4
+# =&gt; false
+prc == 3
+# =&gt; true
+</code></pre>
+
+<h2 id="toc_4">3) Enumerator::Lazy</h2>
+
+<p>An Enumerator::Lazy object will give you back one object at a time from your collection with optional processing on each item.</p>
+
+<pre><code class="language-ruby">def do_the_lazy(array_input)
+  Enumerator::Lazy.new(array_input) do |yielder, value|
+    yielder &lt;&lt; value
+  end
+end
+ 
+x = do_the_lazy([1,2,3,4,5,6])
+# =&gt; #&lt;Enumerator::Lazy: [1, 2, 3, 4, 5, 6]:each&gt;
+ 
+x.next
+# =&gt; 1
+x.next
+# =&gt; 2
+x.next
+# =&gt; 3
+x.force
+# =&gt; [1, 2, 3, 4, 5, 6]
+</code></pre>
+
+<h2 id="toc_5">4) Struct has Enumerable as its ancestor</h2>
+
+<p>Since Struct has Enumerable as its ancestor you can use any method from it and write some handy methods on Structs themselves.</p>
+
+<pre><code class="language-ruby">class Pair &lt; Struct.new(:first, :second)
+  def same?
+    inject(:==)
+  end
+
+  def add
+    reduce(:+)
+  end
+end
+
+a = Pair.new(4,4)
+# =&gt; #&lt;struct Pair first=4, second=4&gt;
+a.same?
+# =&gt; true
+a.add
+# =&gt; 8
+
+b = Pair.new(5,6)
+# =&gt; #&lt;struct Pair first=5, second=6&gt;
+b.same?
+# =&gt; false
+b.add
+# =&gt; 11
+</code></pre>
+
+<h2 id="toc_6">5) $:</h2>
+
+<p>The $: variable is the load path for Ruby gems.  Also available via $LOAD_PATH.  You can add the current directory to your load path with:</p>
+
+<pre><code class="language-ruby">$: &lt;&lt; &#39;.&#39;
+</code></pre>
+
+<h2 id="toc_7">6) inspect</h2>
+
+<p>The inspect method is meant to be a human readable representation for any object.  It is the default representation of an Object when you call Class#new and it shows it on the next line.</p>
+
+<pre><code class="language-ruby">class Human &lt; Struct.new(:name, :age)
+  def inspect
+    &quot;#{name} is a human of age #{age}&quot;
+  end
+end
+
+joe = Human.new(&quot;Joe&quot;, 43)
+# =&gt; Joe is a human of age 43
+</code></pre>
+
+<h2 id="toc_8">7) Hash#invert</h2>
+
+<p>Reverse your Hash key-value pairs.</p>
+
+<pre><code class="language-ruby">{a: 1, b: 2}.invert
+# =&gt; {1=&gt;:a, 2=&gt;:b}
+</code></pre>
+
+<h2 id="toc_9">8) Method#to_proc</h2>
+
+<p>You can convert methods to a proc.  <em>Note they may be exclusively scoped to the same kind of Object they were defined in.</em></p>
+
+<pre><code class="language-ruby">def plus_one(x)
+  x + 1
+end
+proc_increment = method(:plus_one).to_proc
+proc_increment.call(4)
+# =&gt; 5
+[1,3,5,9].map(&amp;proc_increment)
+# =&gt; [2, 4, 6, 10]
+</code></pre>
+
+<h2 id="toc_10">9) module_function</h2>
+
+<p><strong>module_function</strong> is to a <strong>Module</strong> what <strong>private</strong> is to a <strong>Class</strong></p>
+
+<h2 id="toc_11">10) require_relative</h2>
+
+<p><strong>require_relative</strong> is a convenient way to load other ruby files relative to your current files location.</p>
+
+<h2 id="toc_12">11) instance_methods</h2>
+
+<p>On any class you can call the <strong>instance_methods</strong> method to find out what the individual instances of the class will have defined on them.</p>
+
+<h2 id="toc_13">12) Enumerable</h2>
+
+<p>Enumerable is a module that is included in basic collection types such as Array, Hash, and Struct.  So all of these object types will include the instance methods from Enumerable.</p>
+
+<h2 id="toc_14">13) defined?</h2>
+
+<p>The <strong>defined?</strong> <del>method</del> keyword is handy for checking whether anything is publicly defined module, class, method, etc.  On classes on modules you can also call <strong>method_defined?</strong>, <strong>public<u>method</u>defined?</strong>, <strong>private<u>method</u>defined?</strong>, and <strong>protected<u>method</u>defined?</strong></p>
+
+<h2 id="toc_15">14) –noprompt</h2>
+
+<p>If you execute IRB with the command line flag <strong>–noprompt</strong> you will enter in to an IRB session with none of the extra characters showing up on the left side of the terminal.  This is great if you want to experiment with code and then use you mouse to copy &amp; paste from it.</p>
+
+<h2 id="toc_16">15) string % value(s)</h2>
+
+<p>You can insert with type conversion into strings using the percent <strong>%</strong> method.</p>
+
+<pre><code class="language-ruby">&quot;Number: %f %f&quot; % [1,2]
+# =&gt; Number: 1.000000 2.000000
+
+&quot;Number: %e&quot; % &quot;6&quot;
+# =&gt; &quot;Number: 6.000000e+00&quot;
+</code></pre>
+
+<h2 id="toc_17">16) ternary operator _ ? _ : _</h2>
+
+<p>When you use a question mark after something with some space it starts an if else switch.  If the value before the question mark is true then return the first item after the question mark.  If false then move past the colon mark.</p>
+
+<pre><code class="language-ruby">true ? 10 : 20
+# =&gt; 10 
+false ? 10 : 20
+# =&gt; 20 
+false ? 10 : 20 ? 30 : 40
+# =&gt; 30
+false ? 10 : !20 ? 30 : 40
+# =&gt; 40
+false ? 10 : 20 ? 30 ? 50 : 60 : 40
+# =&gt; 50
+false ? 10 : 20 ? !30 ? 50 : 60 : 40
+# =&gt; 60
+false ? 10 : !20 ? 30 ? 50 : 60 : 40
+# =&gt; 40
+</code></pre>
+
+<p>Is is generally advisable to use just one ternary operator per line.  If you wish to use more you should add parenthesis around each inner expression to allow for ease of comprehension.</p>
+
+<h2 id="toc_18">17) ruby -e “#code”</h2>
+
+<p>Run ruby code snippets from the command line</p>
+
+<pre><code class="language-ruby">home:~$ ruby -e &quot;puts 1 + 1&quot;
+2
+</code></pre>
+
+<h2 id="toc_19">18) %[]</h2>
+
+<p><strong>%[]</strong> is just like using quotations to form a string.  It allows you to use interpolation, double quotes, and single quotes within.</p>
+
+<pre><code class="language-ruby">%[Hello #{ &quot;World!&quot; } &quot;Quoted&quot; and &#39;quoted!&#39;]
+# =&gt; &quot;Hello World! \&quot;Quoted\&quot; and &#39;quoted!&#39;&quot;
+</code></pre>
+
+<h2 id="toc_20">19) erb</h2>
+
+<p>ERB is an included library with Ruby and you can use it to add Ruby code to other documents/strings.</p>
+
+<pre><code class="language-ruby">require &quot;erb&quot;
+ERB.new(%[&lt;html&gt;&lt;body&gt;Hello &lt;%= &quot;Wor&quot; + &quot;ld!&quot; %&gt;&lt;/body&gt;&lt;/html&gt;]).result
+# =&gt; &quot;&lt;html&gt;&lt;body&gt;Hello World!&lt;/body&gt;&lt;/html&gt;&quot;
+</code></pre>
+
+<h2 id="toc_21">20) undefined <del>Class</del> instance variables don’t raise errors</h2>
+
+<p>When a variable hasn’t been defined yet and you use the <del>class</del> instance variable form of an at symbol (<strong>@</strong>) then it will evaluate as nil rather than raising any “undefined” errors.</p>
+
+<pre><code class="language-ruby">@a
+# =&gt; nil
+@a.to_i
+# =&gt; 0
+
+class A
+end
+
+A.new.instance_eval {@a}
+# =&gt; nil
+
+def count_from_one()
+  @num = @num.to_i + 1
+end
+count_from_one
+# =&gt; 1 
+count_from_one
+# =&gt; 2 
+count_from_one
+# =&gt; 3 
+count_from_one
+# =&gt; 4
+</code></pre>
+
+<h2 id="toc_22">21) UnboundMethod</h2>
+
+<p>You can extract an instance method from a class and use it like a stand alone Proc with <strong>bind</strong>.</p>
+
+<pre><code class="language-ruby">split = String.instance_method(:split)
+# =&gt; #&lt;UnboundMethod: String#split&gt;
+
+class String
+  undef :split
+end
+
+&quot;asdf&quot;.split(&quot;s&quot;)
+#NoMethodError: undefined method `split&#39; for &quot;asdf&quot;:String
+
+split.bind(&quot;asdf&quot;).call(&quot;s&quot;)
+# =&gt; [&quot;a&quot;, &quot;df&quot;]
+</code></pre>
+
+<h2 id="toc_23">22) ObjectSpace</h2>
+
+<p>You can get get a reference to every instance of a specific object with ObjectSpace.</p>
+
+<pre><code class="language-ruby">class A
+end
+
+3.times do
+  A.new
+end
+
+ObjectSpace.each_object(A).count
+# =&gt; 3
+ObjectSpace.each_object(A).to_a
+# =&gt; [#&lt;A:0x0000000204cc00&gt;, #&lt;A:0x00000002244800&gt;, #&lt;A:0x00000002254430&gt;]
+</code></pre>
+
+<h2 id="toc_24">23) freeze</h2>
+
+<p>Once you freeze an object it cannot be modified.</p>
+
+<pre><code class="language-ruby">module Test
+  def self.example
+    &quot;Hello World!&quot;
+  end
+end
+
+Test.freeze
+Test.example
+# =&gt; &quot;Hello World!&quot; 
+
+module Test
+  def self.asdf
+    123
+  end
+end
+#RuntimeError: can&#39;t modify frozen Module
+
+</code></pre>
+
+<h2 id="toc_25">24) ‘self’ can optionally be replaced by the object name</h2>
+
+<pre><code class="language-ruby">module Apple
+  def Apple.chew
+    &quot;munch munch&quot;
+  end
+end
+
+Apple.chew
+# =&gt; &quot;munch munch&quot; 
+
+def Apple.cut
+  &quot;chop chop&quot;
+end
+
+Apple.cut
+# =&gt; &quot;chop chop&quot;
+
+class A
+  def A.foo
+    &quot;bar&quot;
+  end
+end
+
+A.foo
+# =&gt; &quot;bar&quot;
+</code></pre>
+
+<h2 id="toc_26">25) Top level scope objects can be accessed with ::</h2>
+
+<pre><code class="language-ruby">module A
+  def self.test
+    &quot;FOO&quot;
+  end
+end
+
+module Thing
+  module A
+    def self.test
+      &quot;BAR&quot;
+    end
+  end
+
+  def Thing.inner
+    A.test
+  end
+
+  def Thing.outer
+    ::A.test
+  end
+end
+
+Thing.outer
+# =&gt; &quot;FOO&quot;
+Thing.inner
+# =&gt; &quot;BAR&quot;
+</code></pre>
+
+<h2 id="toc_27">26) prepend</h2>
+
+<p>prepend adds a module to the most recent chain of class ancestors.  Those methods will be called first.</p>
+
+<pre><code class="language-ruby">module A
+  def split
+    self.upcase
+  end
+end
+
+String.prepend A
+
+String.ancestors
+# =&gt; [A, String, Comparable, Object, Kernel, BasicObject] 
+&quot;asdf&quot;.split
+# =&gt; &quot;ASDF&quot;
+</code></pre>
+
+<h2 id="toc_28">27) super</h2>
+
+<p><strong>super</strong> calls the current methods name up the ancestor chain and continues until it finds the definition.</p>
+
+<pre><code class="language-ruby">module A
+  def split(*_)
+    super(&quot;a&quot;)
+  end
+end
+
+class B &lt; String
+  def split
+    super(&quot;b&quot;)
+  end
+end
+
+b = B.new(&quot;123abc&quot;)
+# =&gt; &quot;123abc&quot; 
+b.split
+# =&gt; [&quot;123a&quot;, &quot;c&quot;]
+B.ancestors
+# =&gt; [B, String, Comparable, Object, Kernel, BasicObject]
+
+String.prepend A
+
+b.split
+# =&gt; [&quot;123&quot;, &quot;bc&quot;] 
+B.ancestors
+# =&gt; [B, A, String, Comparable, Object, Kernel, BasicObject]
+
+</code></pre>
+
+<h2 id="toc_29">28) arity</h2>
+
+<p><strong>arity</strong> lets you know how many parameters a Proc or method will take.</p>
+
+<pre><code class="language-ruby">-&gt;{}.arity
+# =&gt; 0 
+-&gt;_{}.arity
+# =&gt; 1 
+-&gt;_,_{}.arity
+# =&gt; 2 
+-&gt;*_{}.arity
+# =&gt; -1
+&quot;&quot;.method(:upcase).arity
+# =&gt; 0 
+String.instance_method(:upcase).arity
+# =&gt; 0
+</code></pre>
+
+<h2 id="toc_30">29) cloning Arrays</h2>
+
+<p>When you use the <strong>Array#clone</strong> method you end up with a different Array with the same exact Objects in them.  No additional memory will be used for the internal objects.  <strong>Array#dup</strong> will do the same thing.</p>
+
+<pre><code class="language-ruby">class Thing
+end
+a = [Thing.new, Thing.new]
+# =&gt; [#&lt;Thing:0x000000017eba48&gt;, #&lt;Thing:0x000000017eba20&gt;] 
+b = a.clone
+# =&gt; [#&lt;Thing:0x000000017eba48&gt;, #&lt;Thing:0x000000017eba20&gt;] 
+a.object_id
+# =&gt; 12541180 
+b.object_id
+# =&gt; 12522640 
+a.map(&amp;:object_id)
+# =&gt; [12541220, 12541200] 
+b.map(&amp;:object_id)
+# =&gt; [12541220, 12541200]
+</code></pre>
+
+<p>If you modify the Array itself you don’t have to worry about the other Array being effected.  But if you change an object in the Array internally that object will be changed in both Arrays.</p>
+
+<h2 id="toc_31">30) Default value for Hash</h2>
+
+<p>Just like above where duplicating an Array points to the same objects, so also we have the same object returned when we set a default for the Hash.</p>
+
+<pre><code class="language-ruby">h = Hash.new
+# =&gt; {} 
+h.default = []
+# =&gt; [] 
+a = h[:c]
+# =&gt; [] 
+b = h[:d]
+# =&gt; [] 
+a[0] = 1
+# =&gt; 1 
+h[:z]
+# =&gt; [1]
+</code></pre>
+
+<p>To remedy this it’s best to use default_proc to create a new Array each time.</p>
+
+<pre><code class="language-ruby">h = Hash.new
+# =&gt; {} 
+h.default_proc = -&gt;*_{ [] }
+# =&gt; #&lt;Proc:0x00000001f66598@(irb):8 (lambda)&gt; 
+a = h[:c]
+# =&gt; [] 
+b = h[:d]
+# =&gt; [] 
+a[0] = 1
+# =&gt; 1 
+h[:z]
+# =&gt; []
+</code></pre>
+
+<h2 id="toc_32">31) class_eval with included</h2>
+
+<p>Using <strong>class_eval</strong> when you’re writing methods to be included is the more natural way of updating classes.  You’ll write your definitions just as if you’re in the class.</p>
+
+<pre><code class="language-ruby">class A
+end
+
+module Example
+  def self.included(base)
+    base.class_eval do
+      def example
+        &quot;instance method&quot;
+      end
+
+      def self.example
+        &quot;class method&quot;
+      end
+    end
+  end
+end
+
+A.include Example
+
+A.example
+&quot;class method&quot;
+
+A.new.example
+&quot;instance method&quot;
+</code></pre>
+
+<h2 id="toc_33">32) inherited</h2>
+
+<p>When you’re having one class inherit from another class <del>as a “mixin”</del> you can write an inherited hook.</p>
+
+<pre><code class="language-ruby">class Foo
+  def self.inherited(base)
+    base.class_eval do
+      def bar
+        &quot;Drinking at the bar!&quot;
+      end
+    end
+  end
+
+  def foo
+    &quot;bar&quot;
+  end
+end
+
+class A &lt; Foo
+end
+
+A.new.foo
+# =&gt; &quot;bar&quot;
+A.new.bar
+# =&gt; &quot;Drinking at the bar!&quot;
+
+Foo.new.foo
+# =&gt; &quot;bar&quot;
+Foo.new.bar
+#NoMethodError: undefined method `bar&#39; for #&lt;Foo:0x00000001916378&gt;
+</code></pre>
+
+<h2 id="toc_34">33) %x</h2>
+
+<p>You can run external commands with %x{}.  <strong>%x</strong> can have any grouping symbols around its content: eg: ”, “”, {}, [], //, (), <sup><sup>.</sup></sup>  Ruby’s percent methods typically allow all of these and more (most any non-alphanumeric character).</p>
+
+<pre><code class="language-ruby">puts %x&#39;cowsay &quot;Hello World!&quot;&#39;
+# ______________
+#&lt; Hello World! &gt;
+# --------------
+#        \   ^__^
+#         \  (oo)\_______
+#            (__)\       )\/\
+#                ||----w |
+#                ||     ||
+# =&gt; nil
+
+</code></pre>
+
+<h2 id="toc_35">34) break :value</h2>
+
+<p>You can return a value out of a loop with <strong>break</strong> just like you would with <strong>return</strong>.</p>
+
+<pre><code class="language-ruby">x = loop do
+  break 9
+end
+
+x
+# =&gt; 9
+</code></pre>
+
+<h2 id="toc_36">35) Lonely Operator &amp;.</h2>
+
+<p>As of Ruby 2.3.0 there is a new operator known as the Safe Navigation Operator, or the Lonely Operator.  According to Matz it “looks like someone sitting on the floor, looking at the dot.”  What this operator allows you to do is continue chaining methods even if one of the items along the way returns nil.  It will safely return nil if that is the case.</p>
+
+<pre><code class="language-ruby">@a&amp;.size
+# =&gt; nil
+
+@a = [1,2,3]
+
+@a&amp;.size
+# =&gt; 3
+</code></pre>
+
+<p>Notice we didn’t get a <strong>NoMethodError</strong>.  This will save a lot of the uses of the Rails <strong>try</strong> method.</p>
+
+<h2 id="toc_37">36) Hash#to_proc</h2>
+
+<p>Mapping values in Ruby is fairly common.  As of Ruby 2.3.0 they’ve added <strong>Hash#to_proc</strong>.</p>
+
+<pre><code class="language-ruby">hsh = {a: 1, b: 2, c: 3}
+
+[:a, :b, :c].map(&amp;hsh)
+# =&gt; [1, 2, 3]
+</code></pre>
+
+<p>Anytime you place an ampersand symbol before an Object as a parameter it calls the <strong>to_proc</strong> method on the Object.  You can mimic the behavior above in earlier versions of Ruby by using the <strong>method</strong> method.</p>
+
+<pre><code class="language-ruby">hsh = {a: 1, b: 2, c: 3}
+
+[:a, :b, :c].map(&amp;hsh.method(:[]))
+# =&gt; [1, 2, 3]
+
+</code></pre>
+
+<h2 id="toc_38">37) retry</h2>
+
+<p>In any begin/rescue/end block you can use retry to repeat the code execution within the block when an error is raised.</p>
+
+<pre><code class="language-ruby">begin
+  @x = @x.to_i + 1
+  raise &quot;Error&quot; if @x &lt; 5
+rescue
+  puts &quot;We&#39;re rescuing!&quot;
+  retry
+end
+We&#39;re rescuing!
+We&#39;re rescuing!
+We&#39;re rescuing!
+We&#39;re rescuing!
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_39">38) raise</h2>
+
+<p>raise can take 3 different parameters.  Just a text explanation, an Error class &amp; a text explanation, or an Error class &amp; text explanation &amp; where the error is from.</p>
+
+<pre><code class="language-ruby">raise &quot;Hello World!&quot;
+#RuntimeError: Hello World!
+
+raise StandardError, &quot;Hello World!&quot;
+#StandardError: Hello World!
+
+class DigestionError &lt; StandardError
+end
+
+raise DigestionError, &quot;stomach hurts&quot;, &quot;bad food&quot;
+#DigestionError: stomach hurts
+#   from bad food
+</code></pre>
+
+<p>Note you’ll probably want to use file and line info for the from area.</p>
+
+<h2 id="toc_40">39) <strong>FILE</strong></h2>
+
+<p>The current file.  In irb this will return “(irb)” .</p>
+
+<h2 id="toc_41">40) <strong>LINE</strong></h2>
+
+<p>The current line.</p>
+
+<h2 id="toc_42">41) Hash.[]</h2>
+
+<pre><code class="language-ruby">Hash[:array, :of, :key, :value, :pairs, &quot;.&quot;]
+# =&gt; {:array=&gt;:of, :key=&gt;:value, :pairs=&gt;&quot;.&quot;}
+</code></pre>
+
+<h2 id="toc_43">42) Global Variables</h2>
+
+<p>The dollar sign defines global variables. (<strong>$</strong>)  Please don’t use them.  It will kludge up your code.  Constants can be used as global variables.  When possible use constants or objects to contain values you need.  <strong>APPLE</strong> is a lot nicer to see than <strong>$apple</strong> .  If you need to define <strong>APPLE</strong> globally just use <strong>::APPLE</strong></p>
+
+<pre><code class="language-ruby">module Kludge
+  def Kludge.ugly
+    $marco = :polo
+  end
+end
+
+$marco
+# =&gt; nil
+
+Kludge.ugly
+$marco
+# =&gt; :polo 
+
+module Nice
+  def self.thing
+    ::Marco = :polo
+  end
+end
+
+Marco
+#NameError: uninitialized constant Marco
+
+Nice.thing
+Marco
+# =&gt; :polo
+</code></pre>
+
+<h2 id="toc_44">43) $0</h2>
+
+<p>$0 (dollar-zero) is the root file executed in Ruby.  It can be used like Python’s <strong><strong>name</strong></strong> == “<strong><strong>main</strong></strong>” to only run code if this file is the main file.  Avoid running code when the file is required with this.</p>
+
+<pre><code class="language-ruby">if __FILE__ == $0
+  puts &quot;You ran this #{__FILE__} directly! :-)&quot;
+end
+</code></pre>
+
+<h2 id="toc_45">44) case permits then</h2>
+
+<pre><code class="language-ruby">case 1
+when 1
+then 
+  puts &quot;yes&quot;
+end
+#yes
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_46">45) case doesn’t need a value</h2>
+
+<pre><code class="language-ruby">y = 4
+
+case
+  when y == 4 then puts &quot;yes&quot;
+end
+#yes
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_47">46) case then is optional</h2>
+
+<pre><code class="language-ruby">case 4
+when 4
+  puts &quot;yes&quot;
+end
+#yes
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_48">47) case calls the === method</h2>
+
+<pre><code class="language-ruby">module Truth
+  def self.===(thing)
+    puts &quot;=== has been called!&quot;
+    true
+  end
+end
+
+case :pizza_is_delicious
+when Truth
+  puts &quot;yummy food for my tummy&quot;
+end
+#=== has been called!
+#yummy food for my tummy
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_49">48) tail conditions</h2>
+
+<p>You can put your if statements and rescue statements after code.</p>
+
+<pre><code class="language-ruby">@x = begin
+  5
+end if false
+
+@x
+# =&gt; nil
+
+raise &quot;Error&quot; rescue :all_clear
+# =&gt; :all_clear
+
+if true
+  puts &quot;Hello World!&quot;
+end if false
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_50">49) use of return</h2>
+
+<p>In Ruby the last thing evaluated is automatically the returned object.  The only time you need to use <strong>return</strong> is if you want to exit with a value earlier in the code.</p>
+
+<pre><code class="language-ruby">x = 3
+
+def a
+  return true if x == 3
+  false
+end
+
+a
+# =&gt; true
+
+x = 5
+a
+# =&gt; false
+</code></pre>
+
+<h2 id="toc_51">50) String#chars</h2>
+
+<p>The <strong>chars</strong> method will automatically split your string into individual String characters in an Array.</p>
+
+<pre><code class="language-ruby">&quot;asdf&quot;.chars
+# =&gt; [&quot;a&quot;, &quot;s&quot;, &quot;d&quot;, &quot;f&quot;]
+</code></pre>
+
+<h2 id="toc_52">51) to_enum, enum_for, each, lazy</h2>
+
+<p>On any Array you can call any of <strong>to_enum</strong>, <strong>enum_for</strong>, <strong>each</strong>, or <strong>lazy</strong> methods to return an Enumerator Object that you can iterate over.  You have basic methods <strong>:next</strong>, <strong>:peek</strong>, <strong>:feed</strong>, and <strong>:rewind</strong> for each of these Enumerators.  But with Lazy you also get a <strong>:force</strong> method which returns the original collection.</p>
+
+<pre><code class="language-ruby">x = [1,2,3].enum_for
+x.next
+# =&gt; 1
+x.next
+# =&gt; 2
+
+y = [1,2,3].lazy
+y.peek
+# =&gt; 1
+y.force
+# =&gt; [1,2,3]
+</code></pre>
+
+<h2 id="toc_53">52) curry</h2>
+
+<p>You can create additional Proc objects that set some of the parameters on another.</p>
+
+<pre><code class="language-ruby">add = lambda {|a,b| a + b }
+
+add.call(1,2)
+# =&gt; 3
+
+add1 = add.curry[1]
+
+add1.call(4)
+# =&gt; 5
+</code></pre>
+
+<h2 id="toc_54">53) mandatory keyword parameters</h2>
+
+<pre><code class="language-ruby">def name(first:, last:)
+  puts &quot;Your name is #{first} #{last}.&quot;
+end
+
+name
+#ArgumentError: missing keywords: first, last
+
+name first: &quot;J&quot;, last: &quot;Appleseed&quot;
+#Your name is J Appleseed.
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_55">54) Range inclusive and exclusive</h2>
+
+<pre><code class="language-ruby">Range.new(1,5,true).to_a
+# =&gt; [1, 2, 3, 4] 
+(1...5).to_a
+# =&gt; [1, 2, 3, 4]
+
+Range.new(1,5,false).to_a
+# =&gt; [1, 2, 3, 4, 5]
+(1..5).to_a
+# =&gt; [1, 2, 3, 4, 5]
+</code></pre>
+
+<h2 id="toc_56">55) String#upto</h2>
+
+<p>The <strong>upto</strong> method for String uses the strings ordinal values to build the range.</p>
+
+<pre><code class="language-ruby">&quot;A&quot;.upto(&quot;z&quot;).to_a
+# =&gt; [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, &quot;I&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;N&quot;,
+# &quot;O&quot;, &quot;P&quot;, &quot;Q&quot;, &quot;R&quot;, &quot;S&quot;, &quot;T&quot;, &quot;U&quot;, &quot;V&quot;, &quot;W&quot;, &quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;, &quot;[&quot;, &quot;\\&quot;, &quot;]&quot;,
+# &quot;^&quot;, &quot;_&quot;, &quot;`&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;,
+# &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;]
+
+&quot;A&quot;.upto(&quot;z&quot;).to_a.map(&amp;:ord)
+# =&gt; [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81,
+# 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99,
+# 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113,
+# 114, 115, 116, 117, 118, 119, 120, 121, 122]
+</code></pre>
+
+<h2 id="toc_57">56) String#squeeze</h2>
+
+<p>The squeeze method on String objects brings gaps down to one in length.</p>
+
+<pre><code class="language-ruby">&quot;  asdf     fdsa   asdf   &quot;.squeeze
+# =&gt; &quot; asdf fdsa asdf &quot;
+
+&quot;..asdf.......fdsa....asdf...&quot;.squeeze(&quot;.&quot;)
+# =&gt; &quot;.asdf.fdsa.asdf.&quot;
+</code></pre>
+
+<p>Clarification: This doesn’t just squeeze spaces.  When no parameter is given it squeezes all duplicate neighboring characters.</p>
+
+<h2 id="toc_58">57) String#replace</h2>
+
+<p>The <strong>replace</strong> method <del>is unusual as it</del> allows you to rewrite the string inside itself.</p>
+
+<pre><code class="language-ruby">class String
+  def are_you_happy?
+    self.replace &quot;I&#39;m happy&quot;
+  end
+end
+
+x = &quot;waaaa!&quot;
+# =&gt; &quot;waaaa!&quot;
+
+x.are_you_happy?
+# =&gt; &quot;I&#39;m happy&quot;
+
+x
+# =&gt; &quot;I&#39;m happy&quot;
+</code></pre>
+
+<h2 id="toc_59">58) Infinity</h2>
+
+<p>You can count up to infinity… but you should do it lazily.</p>
+
+<pre><code class="language-ruby">x = (1..Float::INFINITY).lazy
+
+50.times do
+  x.next
+end
+# =&gt; 50 
+x.next
+# =&gt; 51 
+</code></pre>
+
+<h2 id="toc_60">59) Enumerable#detect</h2>
+
+<p>You can use the detect method to return the first item that evaluates as true.</p>
+
+<pre><code class="language-ruby">[1,5,9,11,13,15,18,21,24,26,28].detect(&amp;:even?)
+# =&gt; 18
+
+[1,5,9,11,13,15,18,21,24,26,28].detect {|number| number.even? }
+# =&gt; 18
+</code></pre>
+
+<p>60) Enumerable#grep</p>
+
+<p>You can use the <strong>grep</strong> method to find items in an Array that match your expression.</p>
+
+<pre><code class="language-ruby">Array.instance_methods.grep /\?/
+# =&gt; [:include?, :any?, :empty?, :eql?, :frozen?, :all?, :one?, :none?,
+# :member?, :instance_of?, :instance_variable_defined?, :kind_of?, :is_a?,
+# :respond_to?, :nil?, :tainted?, :untrusted?, :equal?]
+
+Array.instance_methods.grep /one/
+# =&gt; [:one?, :none?, :clone]
+</code></pre>
+
+<h2 id="toc_61">61) Method#owner</h2>
+
+<p>You can discover which object defines a method within the objects ancestry.</p>
+
+<pre><code class="language-ruby">Array.instance_method(:grep).owner
+# =&gt; Enumerable
+[].method(:grep).owner
+# =&gt; Enumerable
+</code></pre>
+
+<h2 id="toc_62">62) String#tr</h2>
+
+<p>Replaces all characters that match in place.</p>
+
+<pre><code class="language-ruby">&quot;hello world&quot;.tr(&#39;el&#39;, &#39;*&#39;)
+# =&gt; &quot;h***o wor*d&quot;
+</code></pre>
+
+<h2 id="toc_63">63) String#tr_s</h2>
+
+<p>Replaces all characters that match and squashes groups.</p>
+
+<pre><code class="language-ruby">&quot;hello world&quot;.tr_s(&#39;el&#39;, &#39;*&#39;)
+# =&gt; &quot;h*o wor*d&quot;
+</code></pre>
+
+<h2 id="toc_64">64) Array building</h2>
+
+<p>Using <strong>Kernel#Array</strong> to safely enforce an Array result along with using a class variable to avoid any errors creates for a clean looking and less redundant Array builder.  The <strong>&lt;&lt;</strong> method appends a to the end of the Array.</p>
+
+<pre><code class="language-ruby">def build(thing)
+  @arr = Array(@arr) &lt;&lt; thing
+end
+
+@arr
+# =&gt; nil
+
+build :brick1
+build :brick2
+build :brick3
+
+@arr
+# =&gt; [:brick1, :brick2, :brick3]
+</code></pre>
+
+<p>A more common form is as follows:</p>
+
+<pre><code class="language-ruby">(@arr ||= []) &lt;&lt; thing
+</code></pre>
+
+<p>But I find this far more cryptic looking and not as newbie friendly.  Readability, simplicity, and beauty are all important.</p>
+
+<h2 id="toc_65">65) spaces</h2>
+
+<p>You can put spaces in between method calls and new lines after periods.</p>
+
+<pre><code class="language-ruby">a = &quot;asdf&quot;
+
+a   .   reverse   .
+        split(     &quot;s&quot;     )  .
+        join   .     capitalize
+# =&gt; &quot;Fda&quot; 
+
+module A
+  module B
+    module C
+      def self.a
+        &quot;a&quot;
+      end
+    end
+  end
+end
+
+A::
+   B::
+      C   .
+          a
+# =&gt; &quot;a&quot; 
+</code></pre>
+
+<h2 id="toc_66">66) function one liners</h2>
+
+<p>With a semicolon you can avoid the need for adding extra lines.  Best for when you need to have many “short” functions defined.</p>
+
+<pre><code class="language-ruby">class PairMath &lt; Struct.new(:a,:b)
+  def add;      inject(:+) end
+  def subtract; inject(:-) end
+  def multiply; inject(:*) end
+  def divide;   inject(:/) end
+end
+
+a = PairMath.new(6,2)
+# =&gt; #&lt;struct PairMath a=6, b=2&gt; 
+a.add
+# =&gt; 8 
+a.subtract
+# =&gt; 4 
+a.multiply
+# =&gt; 12 
+a.divide
+# =&gt; 3
+</code></pre>
+
+<h2 id="toc_67">67) Forwardable#def_delegators</h2>
+
+<p>You can pass method calls forward (to another object) with the Forwardable standard library module.</p>
+
+<pre><code class="language-ruby">require &#39;forwardable&#39;
+class Arr
+  def initialize(thing = [])
+    @thing = thing
+  end
+
+  extend Forwardable
+  def_delegators :@thing, :join, :&lt;&lt;
+end
+
+x = Arr.new([1,2,3])
+
+x.join
+# =&gt; &quot;123&quot; 
+x &lt;&lt; 4
+x.join
+# =&gt; &quot;1234&quot;
+</code></pre>
+
+<h2 id="toc_68">68) unless</h2>
+
+<p><strong>unless</strong> is the same thing as <strong>if not</strong> (<mark>as it’s understood in English</mark>).  So whenever you see it – think “if not” and that should help.  If you aren’t accustomed to this it can be confusing.  The use case for <strong>unless</strong> is: you want a positive response for a negative situation.</p>
+
+<pre><code class="language-ruby">module Tree
+  def self.has_no_apples?
+    true
+  end
+end
+
+puts &quot;Munch munch&quot; unless Tree.has_no_apples?
+# =&gt; nil 
+</code></pre>
+
+<h2 id="toc_69">69) superclass</h2>
+
+<p>You can use <strong>superclass</strong> to access the class inherited from.</p>
+
+<pre><code class="language-ruby">class A
+  def foo
+    &quot;bar&quot;
+  end
+end
+
+class B &lt; A
+  def foo
+    &quot;mountain&quot;
+  end
+end
+
+x = B.new
+x.foo
+# =&gt; &quot;mountain&quot;
+
+x.class.superclass
+# =&gt; A
+</code></pre>
+
+<h2 id="toc_70">70) binding an UnboundMethod</h2>
+
+<p>Continuing from the code above in #69 .</p>
+
+<pre><code class="language-ruby">x.instance_exec {
+  self.
+    class.
+    superclass.
+    instance_method(:foo).
+    bind(self).
+    call
+}
+# =&gt; &quot;bar&quot;
+</code></pre>
+
+<p>When <strong>instance_method(:foo)</strong> is invoked above it returns an UnboundMethod.  UnboundMethods can only be used in the same kind of Object they were defined in.  But first they must be bound.  To do this we used <strong>bind(self)</strong> inside an <strong>instance_exec</strong> .  Then to call it we run it as we would a Proc object with the <strong>call</strong> method.</p>
+
+<h2 id="toc_71">71) alternative code continuation with \</h2>
+
+<p>If you don’t like entering new lines after a period, you may use a backslash.</p>
+
+<pre><code class="language-ruby">&quot;asdf&quot;      \
+  .reverse   \
+  .split(&quot;s&quot;) \
+  .join        \
+  .capitalize
+# =&gt; &quot;Fda&quot;
+</code></pre>
+
+<h2 id="toc_72">72) HEREDOC</h2>
+
+<p>Multiple line strings.</p>
+
+<pre><code class="language-ruby">def a
+  &lt;&lt;ASTRING
+    This
+    is 
+    multi-
+    line.
+ASTRING
+end
+
+def b
+  &lt;&lt;-BSTRING
+    This
+    is
+    as
+    well!
+  BSTRING
+end
+
+a
+# =&gt; &quot;    This\n    is \n    multi-\n    line.\n&quot;
+b
+# =&gt; &quot;    This\n    is\n    as\n    well!\n&quot;
+</code></pre>
+
+<p>The dash (–) is needed if you want to indent the ending of your HEREDOC closer.</p>
+
+<p>As of Ruby 2.3.0 they’ve added the squiggle (~) option to remove leading white space. <em>Note: It’s called a tilde and not squiggle.</em></p>
+
+<pre><code class="language-ruby">def c
+  &lt;&lt;~CSTRING
+    Look
+    ma!
+    No
+    leading
+    white
+    space.
+  CSTRING
+end
+
+c
+# =&gt; &quot;Look\nma!\nNo\nleading\nwhite\nspace.\n&quot;
+</code></pre>
+
+<p>You can use any up-cased string for marking the beginning and ending of your HEREDOC as long as they’re the same at both ends.</p>
+
+<h2 id="toc_73">73) Hash#dig</h2>
+
+<p>As of Ruby 2.3.0 you now have a dig method great for getting deep into nested hashes.</p>
+
+<pre><code class="language-ruby">buried_treasure = {dirt: {dirt: {dirt: &quot;gold&quot;}}}
+
+buried_treasure.dig(:dirt, :dirt, :dirt)
+# =&gt; &quot;gold&quot;
+</code></pre>
+
+<h2 id="toc_74">74) dynamically naming classes</h2>
+
+<p>Ruby is full of ways to dynamically define methods.  <del>But for classes there seems to only be the use of eval.</del>  One way to define Classes is with eval.</p>
+
+<pre><code class="language-ruby">def boat_them_all(array_in)
+  array_in.each do |noun|
+    eval &lt;&lt;-BOATMAKER
+      class ::#{noun.capitalize}Boat
+        def float?
+          true
+        end
+      end
+    BOATMAKER
+  end
+end
+
+nouns = [:joe, :cow, :car]
+
+boat_them_all(nouns)
+JoeBoat.new.float?
+# =&gt; true
+CowBoat.new.float?
+# =&gt; true
+CarBoat.new.float?
+# =&gt; true
+</code></pre>
+
+<p>I use the double colon here because in most cases you’ll be defining classes from within another class or module.  And if you want the classes to be available globally you’ll need to prepend the double colon ::</p>
+
+<p>Another way to define a class is to use <strong>const_set</strong>.  (Credit to <a href="https://www.reddit.com/r/ruby/comments/40rzm0/101_ruby_code_factoids/cyxehcq">0x0dea</a>.)</p>
+
+<pre><code class="language-ruby">module M
+  const_set &#39;SomeClass&#39;, Class.new {
+    # methods here
+  }
+end
+</code></pre>
+
+<h2 id="toc_75">75) addition doesn’t care</h2>
+
+<p>about excess symbol usage.  You can be artsy with code this way :-).</p>
+
+<pre><code class="language-ruby">4 + - + + + - - - - + 6
+# =&gt; -2
+
+4 + - + + + - - - - - + 6
+# =&gt; 10
+</code></pre>
+
+<h2 id="toc_76">76) ~ tilde calls itself on the following Object</h2>
+
+<pre><code class="language-ruby">class Cow
+  def ~
+    :moo
+  end
+end
+
+@cow = Cow.new
+
+~
+   @cow
+# =&gt; :moo 
+~@cow
+# =&gt; :moo 
+</code></pre>
+
+<h2 id="toc_77">77) empty parenthesis () is nil</h2>
+
+<pre><code class="language-ruby">x = ()
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_78">78) !!</h2>
+
+<p>Truthiness of Object.  Think of it as a double negative… it evaluates truth.</p>
+
+<pre><code class="language-ruby">!!nil
+# =&gt; false 
+!!false
+# =&gt; false 
+!!Object
+# =&gt; true 
+!!Object.new
+# =&gt; true 
+!!4.+(4)
+# =&gt; true 
+</code></pre>
+
+<h2 id="toc_79">79) Ranges guess types</h2>
+
+<p>And it’s not always the right guess.</p>
+
+<pre><code class="language-ruby">(&quot;D9&quot;..&quot;F5&quot;).to_a
+# =&gt; [&quot;D9&quot;, &quot;E0&quot;, &quot;E1&quot;, &quot;E2&quot;, &quot;E3&quot;, &quot;E4&quot;, &quot;E5&quot;, &quot;E6&quot;, &quot;E7&quot;, &quot;E8&quot;, &quot;E9&quot;, &quot;F0&quot;, &quot;F1&quot;, &quot;F2&quot;, &quot;F3&quot;, &quot;F4&quot;, &quot;F5&quot;]
+
+(&quot;DD&quot;..&quot;FA&quot;).to_a
+# =&gt; [&quot;DD&quot;, &quot;DE&quot;, &quot;DF&quot;, &quot;DG&quot;, &quot;DH&quot;, &quot;DI&quot;, &quot;DJ&quot;, &quot;DK&quot;, &quot;DL&quot;, &quot;DM&quot;, &quot;DN&quot;, &quot;DO&quot;, &quot;DP&quot;, &quot;DQ&quot;, &quot;DR&quot;, &quot;DS&quot;, &quot;DT&quot;, &quot;DU&quot;, &quot;DV&quot;, &quot;DW&quot;, &quot;DX&quot;, &quot;DY&quot;, &quot;DZ&quot;, &quot;EA&quot;, &quot;EB&quot;, &quot;EC&quot;, &quot;ED&quot;, &quot;EE&quot;, &quot;EF&quot;, &quot;EG&quot;, &quot;EH&quot;, &quot;EI&quot;, &quot;EJ&quot;, &quot;EK&quot;, &quot;EL&quot;, &quot;EM&quot;, &quot;EN&quot;, &quot;EO&quot;, &quot;EP&quot;, &quot;EQ&quot;, &quot;ER&quot;, &quot;ES&quot;, &quot;ET&quot;, &quot;EU&quot;, &quot;EV&quot;, &quot;EW&quot;, &quot;EX&quot;, &quot;EY&quot;, &quot;EZ&quot;, &quot;FA&quot;]
+
+(&quot;88&quot;..&quot;AA&quot;).to_a
+# =&gt; [&quot;88&quot;, &quot;89&quot;, &quot;90&quot;, &quot;91&quot;, &quot;92&quot;, &quot;93&quot;, &quot;94&quot;, &quot;95&quot;, &quot;96&quot;, &quot;97&quot;, &quot;98&quot;, &quot;99&quot;]
+</code></pre>
+
+<h2 id="toc_80">80) Symbols have methods too</h2>
+
+<pre><code class="language-ruby">:asdf.class
+# =&gt; Symbol
+:apple.methods - Object.methods
+# =&gt; [:id2name, :intern, :to_sym, :to_proc, :succ, :next, :casecmp, :[], :slice, :length, :size, :empty?, :match, :upcase, :downcase, :capitalize, :swapcase, :encoding, :between?] 
+:apple.capitalize
+# =&gt; :Apple
+</code></pre>
+
+<h2 id="toc_81">81)  Numbers succ</h2>
+
+<pre><code class="language-ruby">4.succ
+# =&gt; 5
+4.succ.succ.succ
+# =&gt; 7
+x = 4
+x.succ
+# =&gt; 5
+x
+# =&gt; 4
+</code></pre>
+
+<h2 id="toc_82">82) %w and %W makes an Array of Strings</h2>
+
+<p>Like mentioned above in #33 most non alphanumeric symbols can mark the edges.</p>
+
+<pre><code class="language-ruby">x = 4
+
+%w^a s d f #{x}^
+# =&gt; [&quot;a&quot;, &quot;s&quot;, &quot;d&quot;, &quot;f&quot;, &quot;\#{x}&quot;] 
+
+%W^a s d f #{x}^
+# =&gt; [&quot;a&quot;, &quot;s&quot;, &quot;d&quot;, &quot;f&quot;, &quot;4&quot;]
+</code></pre>
+
+<p>BONUS: <strong>%i</strong> and <strong>%I</strong> for Arrays of Symbols. (credit to <a href="https://www.reddit.com/r/ruby/comments/40rzm0/101_ruby_code_factoids/cyx0cgv">tfaaft</a>)</p>
+
+<pre><code class="language-ruby">%i(foo bar baz)
+# =&gt; [:foo, :bar, :baz]
+s = &#39;ell&#39;
+%I(foo h#{s}o baz)
+# =&gt; [:foo, :hello, :baz]
+</code></pre>
+
+<h2 id="toc_83">83) refinements are awesome</h2>
+
+<pre><code class="language-ruby">module NewUpcase
+  refine String do
+    def upcase
+      &quot;moo&quot;
+    end
+  end
+end
+
+class B
+  using NewUpcase
+
+  def thing
+    &quot;asdf&quot;.upcase
+  end
+end
+
+B.new.thing
+# =&gt; &quot;moo&quot; 
+</code></pre>
+
+<h2 id="toc_84">84) Procs keep their original binding</h2>
+
+<p>The following code is invalid.  The error demonstrates that even though the Proc is called from within an instance of Doctor that the Proc executes and evaluates directly from the instance of Cow.</p>
+
+<pre><code class="language-ruby">class Cow
+  def initialize
+    @feeling = &quot;moo&quot;
+  end
+
+  def feeling
+    proc {send(&quot;@greeting&quot;) + @feeling}
+  end
+end
+
+class Doctor
+  def initialize
+    @greeting = &quot;Hi Doctor. &quot;
+  end
+
+  def feeling?(how_are_you)
+    how_are_you.call
+  end
+end
+
+Doctor.new.feeling? Cow.new.feeling
+#NoMethodError: undefined method `@greeting&#39; for #&lt;Cow:0x000000013e4698 @feeling=:moo&gt;
+</code></pre>
+
+<p>To make the above work you’d need to have the new scope values brought into the Proc as a parameter.</p>
+
+<pre><code class="language-ruby">class Cow
+  def initialize
+    @feeling = &quot;moo&quot;
+  end
+
+  def feeling
+    proc {|greet| greet + @feeling}
+  end
+end
+
+class Doctor
+  def initialize
+    @greeting = &quot;Hi Doctor. &quot;
+  end
+
+  def feeling?(how_are_you)
+    how_are_you.call(@greeting)
+  end
+end
+
+Doctor.new.feeling? Cow.new.feeling
+# =&gt; &quot;Hi Doctor. moo&quot;
+</code></pre>
+
+<h2 id="toc_85">85) Regex named matchers</h2>
+
+<pre><code class="language-ruby">/(?&lt;h&gt;.+) (?&lt;w&gt;.+)/.match(&quot;Hello World!&quot;)[&quot;h&quot;]
+# =&gt; &quot;Hello&quot; 
+/(?&lt;h&gt;.+) (?&lt;w&gt;.+)/.match(&quot;Hello World!&quot;)[&quot;w&quot;]
+# =&gt; &quot;World!&quot;
+</code></pre>
+
+<h2 id="toc_86">86) included_modules</h2>
+
+<p>Beyond knowing the ancestry hierarchy with the ancestors method you can use the included_modules method for, as the name says, just seeing modules included.</p>
+
+<pre><code class="language-ruby">Array.included_modules
+# =&gt; [Enumerable, Kernel]
+</code></pre>
+
+<h2 id="toc_87">87) at_exit</h2>
+
+<p>You can make code run as Ruby exits after the <strong>exit</strong> command.  Example from <a href="http://apidock.com/ruby/v1_9_3_392/Kernel/at_exit">APIDock</a></p>
+
+<pre><code class="language-ruby">def do_at_exit(str1)
+  at_exit { print str1 }
+end
+at_exit { puts &quot;cruel world&quot; }
+do_at_exit(&quot;goodbye &quot;)
+exit
+# =&gt; goodbye cruel world
+</code></pre>
+
+<p>BONUS: And</p>
+
+<pre><code class="language-ruby">BEGIN { ... }
+</code></pre>
+
+<p>for running ASAP. (credit to <a href="https://www.reddit.com/r/ruby/comments/40rzm0/101_ruby_code_factoids/cyxehcq">0x0dea</a>)</p>
+
+<h2 id="toc_88">88) ensure</h2>
+
+<p><strong>ensure</strong> lets you make sure certain code gets run from within the block.</p>
+
+<pre><code class="language-ruby">begin
+  @a = 9
+  raise &quot;error&quot;
+ensure
+  @a = 7
+end
+#RuntimeError: error
+
+@a
+# =&gt; 7 
+</code></pre>
+
+<h2 id="toc_89">89) alias</h2>
+
+<p>You can give a method an additional name.</p>
+
+<pre><code class="language-ruby">class A
+  def foo
+    &quot;bar&quot;
+  end
+end
+
+class B &lt; A
+  alias :fib :foo
+end
+
+B.new.foo
+# =&gt; &quot;bar&quot; 
+B.new.fib
+# =&gt; &quot;bar&quot;
+</code></pre>
+
+<h2 id="toc_90">90) ENV</h2>
+
+<p>ENV is a variable holding a Hash of your systems environment variables.</p>
+
+<h2 id="toc_91">91) Marshal</h2>
+
+<p>Convert Objects to Strings and back again with Marshal.</p>
+
+<pre><code class="language-ruby">x = Marshal.dump(Array([1,2,&quot;3&quot;]))
+# =&gt; &quot;\x04\b[\bi\x06i\aI\&quot;\x063\x06:\x06ET&quot;
+Marshal.load(x)
+# =&gt; [1, 2, &quot;3&quot;]
+</code></pre>
+
+<h2 id="toc_92">92) sleep</h2>
+
+<p>You can make your current thread sleep with calling sleep and providing in seconds how long to wait.</p>
+
+<h2 id="toc_93">93) TAB</h2>
+
+<p>In IRB you can press the TAB key to autofill the rest of a constant or method name.  If there are more than one possibility it will list them all.</p>
+
+<h2 id="toc_94">94) help</h2>
+
+<p>If you have your RI documentation installed then you can lookup information on methods in Ruby by typing <strong>help</strong> in IRB.</p>
+
+<h2 id="toc_95">95) block_given?</h2>
+
+<p><strong>block_given?</strong> is a method to determine if a block can be evaluated in the current scope.  *Formerly <strong>iterator</strong>?*</p>
+
+<pre><code class="language-ruby">def a(&amp;b)
+  block_given?
+end
+
+a
+# =&gt; false 
+a {}
+# =&gt; true
+</code></pre>
+
+<h2 id="toc_96">96) $&gt;</h2>
+
+<p><strong>$&gt;</strong> is a global variable for STDOUT</p>
+
+<pre><code class="language-ruby">$&gt; &lt;&lt; &quot;hello world!\n&quot;
+#hello world!
+# =&gt; #&lt;IO:&lt;STDOUT&gt;&gt;
+</code></pre>
+
+<h2 id="toc_97">97) $;</h2>
+
+<p><strong>$;</strong> is a global variable that may change what strings split on by default.</p>
+
+<pre><code class="language-ruby">&quot;a s d&quot;.split
+# =&gt; [&quot;a&quot;, &quot;s&quot;, &quot;d&quot;] 
+
+$; = &quot;.&quot;
+
+&quot;a s d&quot;.split
+# =&gt; [&quot;a s d&quot;]
+</code></pre>
+
+<p>It looks as though this feature is here to stay: <a href="https://bugs.ruby-lang.org/issues/11729">Ruby Issue #11729</a></p>
+
+<p>BONUS: And <strong>$</strong>, is the default for <strong>String#join</strong> (credit to <a href="https://www.reddit.com/r/ruby/comments/40rzm0/101_ruby_code_factoids/cyxehcq">0x0dea</a>)</p>
+
+<h2 id="toc_98">98) warn</h2>
+
+<p>You can use warn to print a warning message to STDERR.</p>
+
+<pre><code class="language-ruby">warn &quot;Oh no!&quot;
+#Oh no!
+# =&gt; nil
+</code></pre>
+
+<h2 id="toc_99">99) 1.0/0 is Infinity</h2>
+
+<pre><code class="language-ruby">1/0
+#ZeroDivisionError: divided by 0
+1.0/0
+# =&gt; Infinity
+</code></pre>
+
+<h2 id="toc_100">100) Ruby has been around for 20 years!</h2>
+
+<pre><code class="language-ruby">RUBY_COPYRIGHT
+# =&gt; &quot;ruby - Copyright (C) 1993-2015 Yukihiro Matsumoto&quot;
+</code></pre>
+
+</div></body>
+
+</html>

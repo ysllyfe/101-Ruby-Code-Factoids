@@ -1,8 +1,3 @@
-看到 @chenge 的 [一些短小的例子：101 Ruby Code Factoids](https://ruby-china.org/topics/28730)
-习惯了把这些资料整理成PDF，顺带搬运过来。
-原文：[http://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids/](http://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids/)
-
-
 # 101 Ruby Code Factoids
 ## 0) ‘methods’ method
 Since almost everything in Ruby is an Object you can type dot methods on it to see what methods are available.
@@ -1663,5 +1658,6 @@ warn "Oh no!"
 RUBY_COPYRIGHT
 # => "ruby - Copyright (C) 1993-2015 Yukihiro Matsumoto"
 ```
+
 
 
