@@ -820,7 +820,7 @@ The **chars** method will automatically split your string into individual String
 "asdf".chars
 # => ["a", "s", "d", "f"]
 ```
-## 51) to_enum, enum_for, each, lazy
+## 51) to\_enum, enum_for, each, lazy
 
 On any Array you can call any of **to_enum**, **enum_for**, **each**, or **lazy** methods to return an Enumerator Object that you can iterate over.  You have basic methods **:next**, **:peek**, **:feed**, and **:rewind** for each of these Enumerators.  But with Lazy you also get a **:force** method which returns the original collection.
 
